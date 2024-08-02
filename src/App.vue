@@ -83,6 +83,12 @@ const ClickStock=(Index,category)=>{
  
 }
 
+// /*刪除資料 */
+// const ClickDel=(Index)=>{
+//   const DelIndex=  MenuTodo.value.findIndex(item=>item.Id===Index.Id)
+//   MenuTodo.value.splice(DelIndex,1);
+// console.log(DelIndex)
+// }
 /*編輯更欄位 */
 const EditData=ref({});
 const EditUpdataData=(todo)=>{
@@ -136,6 +142,7 @@ const CheckUpdataData=()=>{
           <button type="button" @click="ClickStock(todo,1)">+</button>
         </td>
         <td><button type="button"  @click="EditUpdataData(todo)">編輯</button>
+          <!-- <button type="button" @click="ClickDel(todo)">刪除</button> -->
         </td>
       </tr>
     </tbody>
